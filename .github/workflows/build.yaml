@@ -24,7 +24,7 @@ jobs:
 
       - name: 打包应用
         run: |
-          pyinstaller -F main.py -n telegram_info_export
+          pyinstaller --onefile --windowed --name telegram_info_export --add-data "config.ini;." main.py
 
       - name: 上传发布资源
         uses: actions/upload-release-asset@v1
