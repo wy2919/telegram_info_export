@@ -19,11 +19,11 @@ http://127.0.0.1:7890
 
 ### 示例图
 
-![应用](https://pic.wowyijiu.com/img/2024/10/6709afb6bf2d5.png)
+![应用](https://cdn.jsdelivr.net/gh/WowYiJiu/image@master/git/image.5jsppfdyeq40.webp)
 
-![导出](https://pic.wowyijiu.com/img/2024/10/6709afd32a8af.png)
+![导出](https://cdn.jsdelivr.net/gh/WowYiJiu/image@master/git/image.7htsb7kxl2g0.webp)
 
-![导出信息](https://pic.wowyijiu.com/img/2024/10/6709afec3771f.png)
+![导出信息](https://cdn.jsdelivr.net/gh/WowYiJiu/image@master/git/image.21sh6p5c05cw.webp)
 
 ### 鸣谢
 
