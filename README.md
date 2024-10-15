@@ -6,7 +6,7 @@
 
 ### 使用说明
 
-> 使用时需关掉 2FA
+> 将`telegram_info_export.exe`和`config.ini`放在同一目录下
 
 - `api_id`和`api_hash`需要到[Telegram 开发者平台](https://my.telegram.org/auth)申请
 - proxy_url 格式

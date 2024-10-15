@@ -7,6 +7,7 @@ import pandas as pd
 import tkinter as tk
 from ttkthemes import ThemedTk
 from openpyxl import load_workbook
+from telethon import errors
 from telethon.sync import TelegramClient
 from telethon.tl.types import User
 from tkinter import ttk, simpledialog
@@ -34,13 +35,22 @@ def get_telegram_info(self, api_name, api_id, api_hash, phone_number, proxy_url)
         client.connect()
         self.log("连接成功")
 
+
         if not client.is_user_authorized():
-            self.log("当前账号需要验证")
+            self.log("当前账号需要验证码")
             client.send_code_request(phone_number)
             verification_code = simpledialog.askstring(
                 title="验证码", prompt="请输入验证码:"
             )
-            client.sign_in(phone_number, verification_code)
+            try:
+                client.sign_in(phone_number, verification_code)
+            except errors.SessionPasswordNeededError:
+                self.log("当前账号需要二步验证")
+                password = simpledialog.askstring(
+                    title="密码", prompt="请输入二步验证密码:", show='*'
+                )
+                client.sign_in(password=password)
+
             self.log("登陆成功")
 
         self.log("正在获取对话信息")
