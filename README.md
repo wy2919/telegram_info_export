@@ -17,6 +17,15 @@ socks5://127.0.0.1:23333
 http://127.0.0.1:7890
 ```
 
+手机号格式：+130727xxxxx
+
+如果报错 406: UPDATE_APP_TO_LOGIN 就是pip依赖版本太低需要更新
+
+```
+pip install --upgrade telethon
+```
+
+
 ### 示例图
 
 ![应用](https://cdn.jsdelivr.net/gh/WowYiJiu/image@master/git/image.5jsppfdyeq40.webp)
